@@ -3,6 +3,9 @@
     class="image-container"
     rounded="0"
   >
+    <v-responsive class="mx-auto" max-width="344">
+      <v-text-field v-model="model" hide-details="auto" label="Management IP" clearable></v-text-field>
+    </v-responsive>
     <v-img
       class="image-container"
       src="@/assets/FiveSite.png"
@@ -64,6 +67,9 @@ export default {
     }
   },
   computed: {
+    mplsRouterLink() {
+      return `ssh://root@${this.model}:2162`;
+    },
     links() {
       return {
         mplsrouter: `ssh://root@${this.model}:2162`,

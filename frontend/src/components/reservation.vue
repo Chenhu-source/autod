@@ -1,10 +1,10 @@
 <template>
-  <v-container fluid>
-    <v-textarea
-      clear-icon="mdi-close-circle"
-      label="Text"
-      model-value="please back, we are working on the module."
-      clearable
-    ></v-textarea>
-  </v-container>
+  <div class="d-flex justify-center">
+    <v-card width="300px">
+      <v-card-title class="text-h6 text-md-h5 text-lg-h4">reminder</v-card-title>
+      <v-card-text>
+        This page is in maintenance. . .
+      </v-card-text>
+    </v-card>
+  </div>
 </template>

@@ -30,11 +30,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, defineExpose, onMounted, watchEffect, defineEmits } from 'vue';
+import { ref, defineExpose, watchEffect, defineEmits } from 'vue';
 
 // Define reactive variable for vlaus and items
 const vlaus = ref('Access');
-const items = ref(['Reservation', 'Access']);
+const items = ref(['Reservation', 'Five site','Three site']);
 
 // Define custom event to emit updateComps
 const emits = defineEmits(['updateComps']);
