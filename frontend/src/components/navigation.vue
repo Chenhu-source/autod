@@ -30,18 +30,27 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref, defineExpose } from 'vue';
+import { ref, defineExpose, onMounted, watchEffect, defineEmits } from 'vue';
 
-  const vlaus = ref('')
-  const items = ref([
-    'Reservation',
-    'Access',
-  ]);
-  const select = function (value) {
-    vlaus.value = value
-  }
+// Define reactive variable for vlaus and items
+const vlaus = ref('Access');
+const items = ref(['Reservation', 'Access']);
 
-  
+// Define custom event to emit updateComps
+const emits = defineEmits(['updateComps']);
 
-  
+// Method to handle selection change and emit updateComps event
+const select = (value: string) => {
+  vlaus.value = value;
+};
+
+// Expose vlaus value to the parent component
+defineExpose({
+  vlaus,
+});
+
+// Emit the updateComps event when vlaus changes
+watchEffect(() => {
+  emits('updateComps');
+});
 </script>
