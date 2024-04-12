@@ -30,21 +30,18 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
-  import { useRouter } from 'vue-router'; 
-  
-  const router = useRouter();
+  import { ref, defineExpose } from 'vue';
+
+  const vlaus = ref('')
   const items = ref([
     'Reservation',
     'Access',
   ]);
- 
   const select = function (value) {
-    if (value === 'Reservation') {
-      router.push('/reservation');
-    }
-    if (value === 'Access') {
-      router.push('/labaccess');
-    }
+    vlaus.value = value
   }
+
+  
+
+  
 </script>
