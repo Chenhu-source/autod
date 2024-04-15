@@ -14,6 +14,8 @@ import { ref, watchEffect } from 'vue';
 import reservation from '../components/reservation.vue';
 import navigation from '../components/navigation.vue'; // Import the Navigation component
 import fivesite from '../components/fivesite.vue';
+import welcome from '../components/welcome.vue';
+import threesite from '../components/threesite.vue';
 
 const nav = ref<InstanceType<typeof navigation> | null>(null); // Define ref for navigation component
 const mains = ref(''); // Initialize mains ref with an empty string
@@ -25,8 +27,10 @@ const updateComps = (value) => {
     comps.value = fivesite; // Display the AccessBar component
   } else if (value === 'Reservation') {
     comps.value = reservation; // Display the Reservation component
+  } else if (value === 'Three site') {
+    comps.value = threesite; // Display the Reservation component
   } else {
-    comps.value = null; // Display nothing if mains doesn't match any condition
+    comps.value = welcome; // Display nothing if mains doesn't match any condition
   }
 };
 

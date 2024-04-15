@@ -59,61 +59,53 @@
   </v-card> 
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      model: '10.121.10.37',
-    }
-  },
-  computed: {
-    mplsRouterLink() {
-      return `ssh://root@${this.model}:2162`;
-    },
-    links() {
-      return {
-        mplsrouter: `ssh://root@${this.model}:2162`,
-        ce1: `ssh://root@${this.model}:2156`,
-        ce2: `ssh://root@${this.model}:2158`,
-        ce3: `ssh://root@${this.model}:2159`,
-        legacype: `ssh://root@${this.model}:2160`,
-        ce4: `ssh://root@${this.model}:2157`,
-        pe1: `ssh://root@${this.model}:2153`,
-        pe2: `ssh://root@${this.model}:2160`,
-        internet: `ssh://root@${this.model}:2164`,
-        internet1: `ssh://root@${this.model}:2023`,
-        internet2: `ssh://root@${this.model}:2165`,
-        wansim1: `ssh://root@${this.model}:2152`,
-        wansim2: `ssh://root@${this.model}:2024`,
-        switch1: `ssh://root@${this.model}:2030`,
-        switch2: `ssh://root@${this.model}:2163`,
-        switch5: `ssh://root@${this.model}:2031`,
-        vce1: `ssh://root@${this.model}:1001`,
-        vce2: `ssh://root@${this.model}:1002`,
-        vce3: `ssh://root@${this.model}:1003`,
-        vce4: `ssh://root@${this.model}:1004`,
-        vce5: `ssh://root@${this.model}:1005`,
-        vcg1: `ssh://root@${this.model}:2011`,
-        vcg2: `ssh://root@${this.model}:2012`,
-        vco: `ssh://root@${this.model}:9999`,
-        gw1: `ssh://root@${this.model}:2040`,
-        gw2: `ssh://root@${this.model}:2041`,
-        vcmp: `ssh://root@${this.model}:2050`,
-        dc: `ssh://root@${this.model}:2070`,
-        routed1: `ssh://root@${this.model}:2006`,
-        client1: `ssh://root@${this.model}:2001`,
-        routed2: `ssh://root@${this.model}:2151`,
-        client2: `ssh://root@${this.model}:2002`,
-        client3: `ssh://root@${this.model}:2003`,
-        client4: `ssh://root@${this.model}:2004`,
-        clientd4: `ssh://root@${this.model}:2004`,
-        legacyclient: `ssh://root@${this.model}:2161`,
-        routed5: `ssh://root@${this.model}:2007`,
-        client5: `ssh://root@${this.model}:2005`,
-      }
-    }
-  },
-}
+<script lang="ts" setup>
+import { ref, computed } from 'vue';
+
+const model = ref('10.121.10.37');
+
+const links = computed(() => {
+  return {
+    mplsrouter: `ssh://root@${model.value}:2162`,
+    ce1: `ssh://root@${model.value}:2156`,
+    ce2: `ssh://root@${model.value}:2158`,
+    ce3: `ssh://root@${model.value}:2159`,
+    legacype: `ssh://root@${model.value}:2160`,
+    ce4: `ssh://root@${model.value}:2157`,
+    pe1: `ssh://root@${model.value}:2153`,
+    pe2: `ssh://root@${model.value}:2160`,
+    internet: `ssh://root@${model.value}:2164`,
+    internet1: `ssh://root@${model.value}:2023`,
+    internet2: `ssh://root@${model.value}:2165`,
+    wansim1: `ssh://root@${model.value}:2152`,
+    wansim2: `ssh://root@${model.value}:2024`,
+    switch1: `ssh://root@${model.value}:2030`,
+    switch2: `ssh://root@${model.value}:2163`,
+    switch5: `ssh://root@${model.value}:2031`,
+    vce1: `ssh://root@${model.value}:1001`,
+    vce2: `ssh://root@${model.value}:1002`,
+    vce3: `ssh://root@${model.value}:1003`,
+    vce4: `ssh://root@${model.value}:1004`,
+    vce5: `ssh://root@${model.value}:1005`,
+    vcg1: `ssh://root@${model.value}:2011`,
+    vcg2: `ssh://root@${model.value}:2012`,
+    vco: `ssh://root@${model.value}:9999`,
+    gw1: `ssh://root@${model.value}:2040`,
+    gw2: `ssh://root@${model.value}:2041`,
+    vcmp: `ssh://root@${model.value}:2050`,
+    dc: `ssh://root@${model.value}:2070`,
+    routed1: `ssh://root@${model.value}:2006`,
+    client1: `ssh://root@${model.value}:2001`,
+    routed2: `ssh://root@${model.value}:2151`,
+    client2: `ssh://root@${model.value}:2002`,
+    client3: `ssh://root@${model.value}:2003`,
+    client4: `ssh://root@${model.value}:2004`,
+    clientd4: `ssh://root@${model.value}:2004`,
+    legacyclient: `ssh://root@${model.value}:2161`,
+    routed5: `ssh://root@${model.value}:2007`,
+    client5: `ssh://root@${model.value}:2005`,
+  };
+});
 </script>
 
 <style>

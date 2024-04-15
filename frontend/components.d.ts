@@ -20,7 +20,9 @@ declare module 'vue' {
     Reserve: typeof import('./src/components/reserve.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Threesite: typeof import('./src/components/threesite.vue')['default']
     Topbar: typeof import('./src/components/topbar.vue')['default']
     Topology: typeof import('./src/components/Topology.vue')['default']
+    Welcome: typeof import('./src/components/welcome.vue')['default']
   }
 }
