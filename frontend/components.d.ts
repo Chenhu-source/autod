@@ -23,6 +23,7 @@ declare module 'vue' {
     Threesite: typeof import('./src/components/threesite.vue')['default']
     Topbar: typeof import('./src/components/topbar.vue')['default']
     Topology: typeof import('./src/components/Topology.vue')['default']
+    welcome: typeof import('./src/components/welcome.vue')['default']
     Welcome: typeof import('./src/components/welcome.vue')['default']
   }
 }
