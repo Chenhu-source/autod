@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Pass the updateComps method as a prop to the navigation component -->
-    <navigation ref="nav" :update-comps="updateComps" />
+    <Navigation ref="nav" :update-comps="updateComps" />
   </div>
   <div>
     <!-- Conditional rendering based on the value of mains -->
@@ -11,26 +11,26 @@
 
 <script lang="ts" setup>
 import { ref, watchEffect } from 'vue';
-import reservation from '../components/reservation.vue';
-import navigation from '../components/navigation.vue'; // Import the Navigation component
-import fivesite from '../components/fivesite.vue';
-import welcome from '../components/welcome.vue';
-import threesite from '../components/threesite.vue';
+import Reservation from '../components/Reservation.vue';
+import Fivesite from '../components/Fivesite.vue';
+import Threesite from '../components/Threesite.vue';
+import Welcome from '../components/Welcome.vue';
+import Navigation from '../components/Navigation.vue';
 
-const nav = ref<InstanceType<typeof navigation> | null>(null); // Define ref for navigation component
+const nav = ref<null>(null); // Define ref for navigation component
 const mains = ref(''); // Initialize mains ref with an empty string
 const comps = ref<any>(null); // Initialize comps ref with null
 
 // Method to reactively update comps based on mains
 const updateComps = (value) => {
   if (value === 'Five site') {
-    comps.value = fivesite; // Display the AccessBar component
+    comps.value = Fivesite; // Display the AccessBar component
   } else if (value === 'Reservation') {
-    comps.value = reservation; // Display the Reservation component
+    comps.value = Reservation; // Display the Reservation component
   } else if (value === 'Three site') {
-    comps.value = threesite; // Display the Reservation component
+    comps.value = Threesite; // Display the Reservation component
   } else {
-    comps.value = welcome; // Display nothing if mains doesn't match any condition
+    comps.value = Welcome; // Display nothing if mains doesn't match any condition
   }
 };
 

@@ -13,6 +13,7 @@
         :items="items"
         density="compact"
         label="LAB"
+        variant="solo-filled"
         @update:modelValue="select"
       ></v-select>
 

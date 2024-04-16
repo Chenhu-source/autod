@@ -7,23 +7,15 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Accessbar: typeof import('./src/components/accessbar.vue')['default']
-    Check: typeof import('./src/components/check.vue')['default']
-    Fivesite: typeof import('./src/components/fivesite.vue')['default']
+    Check: typeof import('./src/components/Check.vue')['default']
+    Fivesite: typeof import('./src/components/Fivesite.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Labaccess: typeof import('./src/components/labaccess.vue')['default']
-    Lablogin: typeof import('./src/components/lablogin.vue')['default']
-    Labselector: typeof import('./src/components/labselector.vue')['default']
-    Login: typeof import('./src/components/login.vue')['default']
-    Navigation: typeof import('./src/components/navigation.vue')['default']
-    Reservation: typeof import('./src/components/reservation.vue')['default']
-    Reserve: typeof import('./src/components/reserve.vue')['default']
+    Login: typeof import('./src/components/Login.vue')['default']
+    Navigation: typeof import('./src/components/Navigation.vue')['default']
+    Reservation: typeof import('./src/components/Reservation.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Threesite: typeof import('./src/components/threesite.vue')['default']
-    Topbar: typeof import('./src/components/topbar.vue')['default']
-    Topology: typeof import('./src/components/Topology.vue')['default']
-    welcome: typeof import('./src/components/welcome.vue')['default']
-    Welcome: typeof import('./src/components/welcome.vue')['default']
+    Threesite: typeof import('./src/components/Threesite.vue')['default']
+    Welcome: typeof import('./src/components/Welcome.vue')['default']
   }
 }

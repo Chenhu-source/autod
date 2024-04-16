@@ -116,154 +116,154 @@ const links = computed(() => {
   }
   .mplsrouter{
     left: 710px; 
-    top: 80px; 
+    top: 40px; 
   }
   .ce1{
     left: 310px; 
-    top: 145px; 
+    top: 105px; 
   }
   .ce2{
     left: 420px; 
-    top: 145px; 
+    top: 105px; 
   }
   .ce3{
     left: 560px; 
-    top: 145px; 
+    top: 105px; 
   }
   .legacype{
     left: 910px; 
-    top: 160px; 
+    top: 120px; 
   }
   .ce4{
     left: 30px; 
-    top: 780px; 
+    top: 740px; 
   }
   .pe1{
     left: 930px; 
-    top: 505px; 
+    top: 465px; 
   }
   .pe2{
     left: 905px; 
-    top: 570px; 
+    top: 530px; 
   }
   .cr-internet{
     left: 170px; 
-    top: 500px; 
+    top: 460px; 
   }
   .cr-internet1{
     left: 20px; 
-    top: 570px; 
+    top: 530px; 
   }
   .cr-internet2{
     left: 100px; 
-    top: 570px; 
+    top: 530px; 
   }
   .wansim1{
     left: 170px; 
-    top: 350px; 
+    top: 310px; 
   }
   .wansim2{
     left: 180px; 
-    top: 350px; 
+    top: 310px; 
   }
   .switch1{
     left: -720px; 
-    top: 320px; 
+    top: 280px; 
   }
   .switch2{
     left: -460px; 
-    top: 225px; 
+    top: 185px; 
   }
   .switch5{
     left: -850px; 
-    top: 630px; 
+    top: 590px; 
   }
   .vce1{
     left: -750px; 
-    top: 320px; 
+    top: 280px; 
   }
   .vce2{
     left: -670px; 
-    top: 335px; 
+    top: 295px; 
   }
   .vce3{
     left: -515px; 
-    top: 275px; 
+    top: 235px; 
   }
   .vce4{
     left: -360px; 
-    top: 275px; 
+    top: 245px; 
   }
   .vce5{
     left: -1015px; 
-    top: 635px; 
+    top: 595px; 
   }
   .vcg1{
     left: 1180px; 
-    top: 475px; 
+    top: 435px; 
   }
   .vcg2{
     left: 1100px; 
-    top: 550px; 
+    top: 510px; 
   }
   .vco{
     left: 780px; 
-    top: 690px; 
+    top: 650px; 
   }
   .gw1{
     left: 500px; 
-    top: 690px; 
+    top: 650px; 
   }
   .gw2{
     left: 500px; 
-    top: 690px; 
+    top: 650px; 
   }
   .vcmp{
     left: 240px; 
-    top: 700px; 
+    top: 660px; 
   }
   .dc{
     left: 325px; 
-    top: 880px; 
+    top: 840px; 
   }
   .routed1{
     left: -270px; 
-    top: 215px; 
+    top: 175px; 
   }
   .client1{
     left: -170px; 
-    top: 185px; 
+    top: 145px; 
   }
   .routed2{
     left: 20px; 
-    top: 185px; 
+    top: 145px; 
   }
   .client2{
     left: -80px; 
-    top: 295px; 
+    top: 255px; 
   }
   .client3{
     left: 10px; 
-    top: 145px; 
+    top: 105px; 
   }
   .client4{
     left: 120px; 
-    top: 155px; 
+    top: 115px; 
   }
   .clientd4{
     left: 50px; 
-    top: 105px; 
+    top: 65px; 
   }
   .legacyclient{
     left: 170px; 
-    top: 240px; 
+    top: 200px; 
   }
   .routed5{
     left: -870px; 
-    top: 690px; 
+    top: 650px; 
   }
   .client5{
     left: -720px; 
-    top: 660px; 
+    top: 620px; 
   }
 </style>
