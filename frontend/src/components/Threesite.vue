@@ -15,7 +15,7 @@
       <v-btn class="tmplsrouter" variant="text" :href="links.mplsrouter">@@@</v-btn>
       <v-btn class="tce1" variant="text" :href="links.ce1">@@@</v-btn>
       <v-btn class="tce2" variant="text" :href="links.ce2">@@@</v-btn>
-      <v-btn class="tlegacype" variant="text" :href="links.ce3">@@@</v-btn>
+      <v-btn class="tlegacype" variant="text" :href="links.legacype">@@@</v-btn>
       <v-btn class="tpe1" variant="text" :href="links.pe1">@@@</v-btn>
       <v-btn class="tpe2" variant="text" :href="links.pe2">@@@</v-btn>
       <v-btn class="tcr-internet" variant="text" :href="links.internet">@@@</v-btn>
@@ -51,48 +51,41 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
 
-const model = ref('10.121.10.34');
+const model = ref('10.121.10.37');
 
 const links = computed(() => {
   return {
-    mplsrouter: `ssh://root@${model.value}:2162`,
-    ce1: `ssh://root@${model.value}:2156`,
-    ce2: `ssh://root@${model.value}:2158`,
-    ce3: `ssh://root@${model.value}:2159`,
-    legacype: `ssh://root@${model.value}:2160`,
-    ce4: `ssh://root@${model.value}:2157`,
-    pe1: `ssh://root@${model.value}:2153`,
-    pe2: `ssh://root@${model.value}:2160`,
-    internet: `ssh://root@${model.value}:2164`,
-    internet1: `ssh://root@${model.value}:2023`,
-    internet2: `ssh://root@${model.value}:2165`,
-    wansim1: `ssh://root@${model.value}:2152`,
-    wansim2: `ssh://root@${model.value}:2024`,
-    switch1: `ssh://root@${model.value}:2030`,
-    switch2: `ssh://root@${model.value}:2163`,
-    switch5: `ssh://root@${model.value}:2031`,
+    mplsrouter: `ssh://root@${model.value}:3004`,
+    ce1: `ssh://root@${model.value}:1401`,
+    ce2: `ssh://root@${model.value}:1402`,
+    pe1: `ssh://root@${model.value}:2101`,
+    pe2: `ssh://root@${model.value}:2102`,
+
+    internet: `ssh://root@${model.value}:3003`,
+    internet1: `ssh://root@${model.value}:3001`,
+    internet2: `ssh://root@${model.value}:3002`,
+    wansim1: `ssh://root@${model.value}:4001`,
+
+    switch1: `ssh://root@${model.value}:1301`,
+    switch2: `ssh://root@${model.value}:1302`,
+   
     vce1: `ssh://root@${model.value}:1001`,
     vce2: `ssh://root@${model.value}:1002`,
     vce3: `ssh://root@${model.value}:1003`,
-    vce4: `ssh://root@${model.value}:1004`,
-    vce5: `ssh://root@${model.value}:1005`,
-    vcg1: `ssh://root@${model.value}:2011`,
-    vcg2: `ssh://root@${model.value}:2012`,
+
+    vcg1: `ssh://root@${model.value}:2001`,
+    vcg2: `ssh://root@${model.value}:2002`,
     vco: `ssh://root@${model.value}:9999`,
-    gw1: `ssh://root@${model.value}:2040`,
-    gw2: `ssh://root@${model.value}:2041`,
-    vcmp: `ssh://root@${model.value}:2050`,
-    dc: `ssh://root@${model.value}:2070`,
-    routed1: `ssh://root@${model.value}:2006`,
-    client1: `ssh://root@${model.value}:2001`,
-    routed2: `ssh://root@${model.value}:2151`,
-    client2: `ssh://root@${model.value}:2002`,
-    client3: `ssh://root@${model.value}:2003`,
-    client4: `ssh://root@${model.value}:2004`,
-    clientd4: `ssh://root@${model.value}:2004`,
-    legacyclient: `ssh://root@${model.value}:2161`,
-    routed5: `ssh://root@${model.value}:2007`,
-    client5: `ssh://root@${model.value}:2005`,
+    gw1: `ssh://root@${model.value}:5001`,
+    vcmp: `ssh://root@${model.value}:6001`,
+    dc: `ssh://root@${model.value}:5002`,
+    routed1: `ssh://root@${model.value}:1201`,
+    client1: `ssh://root@${model.value}:1101`,
+    routed2: `ssh://root@${model.value}:1202`,
+    client2: `ssh://root@${model.value}:1102`,
+    client3: `ssh://root@${model.value}:1103`,
+    legacype: `ssh://root@${model.value}:6003`,
+    legacyclient: `ssh://root@${model.value}:6002`,
   };
 });
 </script>
